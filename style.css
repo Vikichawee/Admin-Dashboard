@@ -1,0 +1,127 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr 1fr 0.2fr;
+  height: 90vh;
+  width: 90vw;
+  grid-column-gap: 20px; /* add 20px of space between columns */
+  grid-row-gap: 10px; /* add 10px of space between rows */
+  background-color: pink;
+}
+
+.dashboard {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  display: grid;
+
+  grid-template-rows: repeat(10, 1fr) 10fr;
+
+  background-color: lightblue;
+  gap: 15px;
+}
+
+.navbar {
+  grid-column: 2/5;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: gray;
+}
+
+.projects {
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 3/7;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.announcements {
+  background-color: bisque;
+  display: grid;
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.trending {
+  background-color: saddlebrown;
+  display: grid;
+  grid-column: 4/5;
+  grid-row: 5/7;
+}
+
+.first {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-evenly;
+}
+.second {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-evenly;
+}
+.titles {
+  background-color: purple;
+  grid-row: 2/3;
+  grid-column: 2/5;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.trendingTitle {
+  background-color: purple;
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+.home {
+  display: flex;
+  padding-left: 10px;
+}
+.profile {
+  display: flex;
+  padding-left: 10px;
+}
+.messages {
+  display: flex;
+  padding-left: 10px;
+}
+.tasks {
+  display: flex;
+  padding-left: 10px;
+}
+.communities {
+  display: flex;
+  padding-left: 10px;
+}
+.settings {
+  display: flex;
+  padding-left: 10px;
+}
+.history {
+  display: flex;
+  padding-left: 10px;
+}
+.support {
+  display: flex;
+  padding-left: 10px;
+}
+.privacy {
+  display: flex;
+  padding-left: 10px;
+}
+.dashboardIcon {
+  display: flex;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.aproject {
+  display: grid;
+  grid-template-columns: 0.02fr 1fr;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.border {
+  background-color: black;
+  grid-column: 1/2;
+  border-top-left-radius: 5px; /* make the border radius of the top left corner half of the element's width or height */
+  border-bottom-left-radius: 5px;
+}
