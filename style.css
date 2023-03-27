@@ -27,7 +27,8 @@
 .navbar {
   grid-column: 2/5;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.4fr 0.5fr;
+  grid-template-columns: 1.45fr 0.4fr 0.4fr 0.4fr;
   background-color: gray;
 }
 
@@ -60,16 +61,6 @@
   align-items: center;
 }
 
-.first {
-  grid-row: 1/2;
-  display: flex;
-  justify-content: space-evenly;
-}
-.second {
-  grid-row: 2/3;
-  display: flex;
-  justify-content: space-evenly;
-}
 .titles {
   display: grid;
   background-color: purple;
@@ -180,4 +171,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.searchBar {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+input {
+  width: 70%;
+}
+.navUser {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.navName {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navHi {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  grid-column: 1/2;
+}
+.navHi p {
+  font-weight: bold;
+}
+
+.buttons1 {
+  grid-column: 2/3;
+}
+.buttons2 {
+  grid-column: 3/4;
+}
+.buttons3 {
+  grid-column: 4/5;
 }
