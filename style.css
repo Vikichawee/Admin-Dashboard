@@ -1,7 +1,11 @@
+* {
+  overflow: hidden;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 0.6fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr 1fr 0.2fr;
+  grid-template-columns: 0.6fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 1fr 0.2fr 1fr 1fr 0.2fr 1fr 0.2fr;
   height: 90vh;
   width: 90vw;
   grid-column-gap: 20px; /* add 20px of space between columns */
@@ -14,7 +18,7 @@
   grid-row: 1/-1;
   display: grid;
 
-  grid-template-rows: repeat(10, 1fr) 10fr;
+  grid-template-rows: 4fr repeat(10, 1fr) 10fr;
 
   background-color: lightblue;
   gap: 15px;
@@ -40,13 +44,20 @@
   background-color: bisque;
   display: grid;
   grid-column: 4/5;
-  grid-row: 3/4;
+  grid-row: 3/5;
+  border-radius: 5px;
+
+  grid-template-rows: 0.4fr 1fr 0.4fr 1fr 0.4fr 1fr;
 }
 .trending {
   background-color: saddlebrown;
   display: grid;
   grid-column: 4/5;
-  grid-row: 5/7;
+  grid-row: 6/7;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 20px;
+  align-items: center;
 }
 
 .first {
@@ -60,16 +71,26 @@
   justify-content: space-evenly;
 }
 .titles {
+  display: grid;
   background-color: purple;
   grid-row: 2/3;
   grid-column: 2/5;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.title1 {
+  padding-left: 13px;
+  padding-top: 5px;
+}
+.title2 {
+  grid-column: 3/4;
+  padding-left: 13px;
+  padding-top: 5px;
 }
 .trendingTitle {
   background-color: purple;
   grid-column: 4/5;
-  grid-row: 4/5;
+  grid-row: 5/6;
 }
 .home {
   display: flex;
@@ -109,13 +130,14 @@
 }
 .dashboardIcon {
   display: flex;
-  padding: 10px;
+  padding: 20px;
   font-size: 30px;
   font-weight: bold;
 }
 .aproject {
   display: grid;
   grid-template-columns: 0.02fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -124,4 +146,38 @@
   grid-column: 1/2;
   border-top-left-radius: 5px; /* make the border radius of the top left corner half of the element's width or height */
   border-bottom-left-radius: 5px;
+  grid-row: 1/-1;
+}
+.projectTitle {
+  font-size: 20px;
+  font-weight: Bold;
+  padding: 7px;
+}
+.projectContent {
+  grid-column: 2/3;
+  padding-left: 7px;
+}
+
+.announcementsContent1 {
+  grid-row: 2/3;
+  padding-left: 10px;
+}
+.announcementsContent2 {
+  grid-row: 4/5;
+  padding-left: 10px;
+}
+.announcementsContent3 {
+  grid-row: 6/7;
+  padding-left: 10px;
+}
+.announcementsTitle {
+  font-weight: bold;
+  padding: 10px;
+}
+.biggerContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
